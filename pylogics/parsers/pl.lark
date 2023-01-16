@@ -23,11 +23,11 @@ IMPLY : ">>"|"->"
 OR: "||"|"|"
 AND: "&&"|"&"
 NOT: "!"|"~"
-TRUE.2: /true/
-FALSE.2: /false/
+TRUE.2: /1/
+FALSE.2: /0/
 
 // Symbols cannot contain uppercase letters, because these are reserved
 // Moreover, any word between quotes is a symbol
-SYMBOL_NAME: /[a-z][a-z0-9_]*|"\w+"/
+SYMBOL_NAME: /[a-zA-Z][a-zA-Z0-9_]*|"\w+"/
 
 %ignore /\s+/
